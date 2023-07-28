@@ -68,6 +68,7 @@ export function getTypographyFontSizeValue( preset, typographyOptions ) {
 		fontSize: defaultSize,
 		minimumFontSizeLimit: fluidTypographySettings?.minFontSize,
 		maximumViewPortWidth: fluidTypographySettings?.maxViewPortWidth,
+		minimumViewPortWidth: fluidTypographySettings?.minViewPortWidth,
 	} );
 
 	if ( !! fluidFontSizeValue ) {
