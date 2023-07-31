@@ -494,6 +494,7 @@ export default function Image( {
 								aspectRatio: newValue.aspectRatio,
 							} );
 						} }
+						isResizable={ isResizable }
 						defaultScale="cover"
 						defaultAspectRatio="auto"
 						scaleOptions={ scaleOptions }
