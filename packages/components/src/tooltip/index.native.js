@@ -76,6 +76,7 @@ const Tooltip = ( {
 	text,
 	visible: initialVisible = false,
 } ) => {
+	console.log( '>>> Tooltip', initialVisible );
 	const referenceElementRef = useRef( null );
 	const animationValue = useRef( new Animated.Value( 0 ) ).current;
 	const [ , horizontalPosition = 'center' ] = position.split( ' ' );
@@ -244,6 +245,7 @@ const Tooltip = ( {
 		return children;
 	}
 
+	console.log( '>>> Tooltip 2', children );
 	return (
 		<>
 			{ cloneElement( children, {
